@@ -1,0 +1,85 @@
+body,html
+{
+    margin: 0px;
+    padding: 0px;
+    flex-direction: row;
+    display: flex;
+    margin: 0%;
+    background-color: white;
+    font-family: Arial;
+ }
+
+ .conta
+ {
+    display: flex;
+    background-color: white;
+    width: 60%;
+    flex-direction:column;
+    height: 100%;
+    font-family: 'Times New Roman';
+    margin-top: 30%;
+    margin-left:50%;   
+ }
+
+ .marrom
+ {
+     background-color: #B87648;
+     display: flex;
+     flex-direction: column;
+     height: 790px;
+     width: 500px;
+ }
+
+button{
+    width: 240px;
+    height: 90px;
+    margin-top: 50px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color:#B87648;
+    color: #B87648;
+    background-color:#EDEDED;
+}
+input
+{
+    border-radius: 15px;
+            padding: 15px;
+            border-style: none;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: #E9E9E9;
+}
+
+#titulo{
+    color: white;
+    text-align: center;
+    margin-top: 50%;
+}
+
+#subtitulo{
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    margin-top: 3%;
+    font-size: 100%;
+}
+
+.botao_entrar{
+    width: 240px;
+    height: 90px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color:#B87648;
+    color: #B87648;
+    background-color:#EDEDED;
+    margin-left: 23%;
+}
+
+#criar_conta{
+    color: #B87648;;
+    text-align: center;
+    font-family: Arial;
+    margin-top: 10%;
+    font-size: 30px;
+}
+
