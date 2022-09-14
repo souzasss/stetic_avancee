@@ -1,0 +1,98 @@
+body{
+    background-color:#EDEDED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+  
+}
+.esquerda{
+
+       color: white;
+        background-color: #B87648;
+        width:  70vh;
+        height: 100vh;
+        display: block;
+        align-content: center;
+        margin-left: 0%;
+        position: absolute;
+        left: 0%;
+    }
+
+.conta{
+    flex-direction: column;
+    margin: 100%;
+    color: #B87648;
+    margin-right: 0%;  
+     
+        
+    
+
+}
+.geral
+{
+    display: flex;
+    flex-direction: row;
+   height: 100%;
+    justify-content: space-around;
+    margin: 0%;
+    left: 50%;
+}
+
+.botao_cadastrar{
+        width: 240px;
+        height: 90px;
+        margin-top: 50px;
+        border-radius: 15px;
+        border-style: solid;
+        border-color:#B87648;
+        color: #EDEDED;
+        background-color: #B87648;
+        margin-top: 55%;
+        margin-left: 20%;  
+    }
+
+    #titulo
+    {
+        margin-top: 40%;
+        margin-left: 20%;
+    }
+
+    #titulo2
+    {
+        margin-top: 2%;
+        font-size: 3vh;
+        margin-left: 13%;
+    }
+
+    .botao_entrar{
+        width: 240px;
+        height: 90px;
+        border-radius: 15px;
+        border-style: solid;
+        border-color:#EDEDED;
+        color: #EDEDED;
+        background-color:#B87648;
+        margin-top: 10%;
+        margin-left: 23%;  
+        
+
+    }
+
+    .branco{
+        width: 100%;
+        height: 100%;
+        background-color: white; 
+    }
+
+    .alinhamento{
+        margin-left: 0%;
+        align-content: space-around; 
+       
+    }
+
+    .logo{
+        margin-left: 70px;
+    }
