@@ -1,30 +1,29 @@
 body{
     margin: 0px;
     padding: 0px;
-
 }
 .alinhamento{
     margin-left: auto;
     margin-right: auto;
     align-content: space-around; 
     color: #EDEDED
-    
-   
-
 }
+
 .coluna{
     display: flex;
     flex-direction: column;
 }
+
 .linha{
     display: flex;
     flex-direction: row;
-
 }
+
 #titulo{
     color: #B87648;
     text-align: center;
 }
+
 .bloco{
     background-color: #B87648;
     width: 1050px;
@@ -32,6 +31,7 @@ body{
     border-radius: 20px;
     padding: 50px;
 }
+
 .entrada{
     width: 630px;
     height: 100px;
@@ -47,11 +47,13 @@ body{
     height: 100%;
     background-color: white; 
 }
+
 .back{
     width: 100%;
     background-color: #EDEDED;
     height: 100%;
 }
+
 .logo{
     margin-left: 70px;
 }

@@ -9,16 +9,24 @@ body,html
     font-family: Arial;
  }
 
+.block_top{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
  .conta
  {
+    text-align: center;
     display: flex;
-    background-color: white;
-    width: 60%;
+    width: 300px;
     flex-direction:column;
     height: 100%;
     font-family: 'Times New Roman';
-    margin-top: 30%;
-    margin-left:50%;   
+    margin-left:50%; 
+ }
+ .conta img{
+    height: 120px;
  }
 
  .marrom
