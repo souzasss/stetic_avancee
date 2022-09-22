@@ -5,62 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+
+        .body{
+            padding: 0px;
+            margin: 0px;
+            background-color: #F5F5F5;
+        }
+
+        .block_top{
+            width: 100%;
+            height: 150px;
+            background-color: #FFFFFF;
+        }
+
+        .align{
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-around;
+        }
+
+        .block_bk{
+            width: 1264px;
+            height: 542px;
+    
+            background: #B87648;
+            border-radius: 30px;
+        }
+
+        .div_block{
+            width: 100%;
+            height: 100%;
+        }
+
+        .text_align{
+            text-align: center;
+        }
+
+        .column{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .div_block input{
+            width: 700px;
+            height: 70px;
+
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+
+            border-style: none;
+        }
+
+        .div_block select{
+            width: 700px;
+            height: 70px;
+
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: none;
+        }
+
+        .block_bk h3{
+            margin-top: 0px;
+        }
+
+        .conc{
+            margin-top: 15px;
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            border-style: none;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        Agende seu horário:
+    <div class="block_top">
+        <img src="logo.png" style="margin-left: 70px;">
     </div>
-     
-    <select name="Selecione o procedimento">
-            <option value="proced1">Preenchimento Labial</option>
-            <option value="proced2" >Intradermoterapia</option>
-            <option value="proced3">Botox </option>
-            <option value="proced4">Rinomodelação </option>
-            <option value="proced5">Microagulhamento </option>
-            <option value="proced6">Criolipólise</option>
-            <option value="consulta">Consulta</option>
-          </select>
 
-          <br><br>
-    <div>
-        Selecione a data:
-    </div>
-          <input type="week">
-          <br><br>
+    <div class="block_bk align">
+        
+        <div class="text_align div_block column">
+            <br>
+            <h3 >
+                Agende seu horário:
+            </h3>
+             
+            <label for="select"><h3>Escolha o procedimento</h3></label>
+            <select id="select">
+                    <option value="null">Escolha a sua opção</option>
+                    <option value="proced1">Preenchimento Labial</option>
+                    <option value="proced2" >Intradermoterapia</option>
+                    <option value="proced3">Botox </option>
+                    <option value="proced4">Rinomodelação </option>
+                    <option value="proced5">Microagulhamento </option>
+                    <option value="proced6">Criolipólise</option>
+                    <option value="consulta">Consulta</option>
+                  </select>
+        
+                  <br><br>
+            <h3>
+                Selecione a data:
+            </h3>
+                  <input type="date">
+                  <br><br>
+        
+            <h3>
+                Desmarcar procedimento:
+            </h3>
+        
+                <input type="time">
+           
+            <button class="conc align" >Concluir</button>
+            
+        </div>
 
-    <div>
-        Desmarcar procedimento:
+                 
+              
     </div>
-            <select name="Selecione o procedimento">
-                <option value="proced1">Preenchimento Labial</option>
-                <option value="proced2" >Intradermoterapia</option>
-                <option value="proced3">Botox </option>
-                <option value="proced4">Rinomodelação </option>
-                <option value="proced5">Microagulhamento </option>
-                <option value="proced6">Criolipólise</option>
-                <option value="consulta">Consulta</option>
-            </select>
+
     
-          <br><br>
-
-          <div>
-                Marcar Consulta:
-            </div>
-            <input type="week">
-
-            <br><br>
-
-            Escolha o profissional que deseja realizar a consulta:
-            <select name="Selecione o procedimento">
-                <option value="prof1">Joana Rickmann</option>
-                <option value="prof2" >Giulia Medina</option>
-                <option value="prof3">Marcela França</option>
-             </select>
-            </div>
-
-            <br><br>
-
-            <button>Concluir</button>
-          
 </body>
 </html>
