@@ -26,7 +26,7 @@ body,html
     margin-left:50%; 
  }
  .conta img{
-    height: 120px;
+    height: 270px;
  }
 
  .marrom
@@ -45,8 +45,8 @@ button{
     border-radius: 15px;
     border-style: solid;
     border-color:#B87648;
-    color: #B87648;
-    background-color:#EDEDED;
+    color: #EDEDED;
+    background-color:#B87648;
 }
 input
 {
