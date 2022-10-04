@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,14 +21,16 @@
         <img src="logo.png" alt="logo">
         </div>
         <h1 id="criar_conta">Crie sua conta:</h1>
-        <div class="conta2"><input type="text"  placeholder="Nome">
+        <form action="cadastrar.php" method="post">
+        <div class="conta2"><input type="text" name="nome" placeholder="Nome">
             <br><br></div>
-        <div class="conta2"> <input type="text"  placeholder="Email">
+        <div class="conta2"> <input type="text" name="email" placeholder="Email">
             <br><br></div>
-        <div class="conta2"><input type="password"  placeholder="Senha">
+        <div class="conta2"><input type="password"  name="senha" placeholder="Senha">
             <br><br>
         </div>
-        <div class="button"> <button> Cadastrar </button></div>  
+        <div class="button"> <input type="submit" value="cadastrar"> </div>  
+    </form>
     </div>
        
 </body>
