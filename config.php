@@ -1,10 +1,9 @@
 <?php
-    // DEFININDO O FUSO HORÁRIO:
+  
     date_default_timezone_set('America/Sao_Paulo');
     
-    // CONEXÃO COM A BASE DE DADOS: verifique sempre o dbname
     try{
-        $pdo = new PDO("mysql:dbname=stetic_avancee;host=localhost;charset=utf8","root","");
+        $pdo = new PDO("mysql:dbname=stetic_avancee1;host=localhost;charset=utf8","root","");
     }
     catch(PDOException $erro)
     {
