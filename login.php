@@ -4,11 +4,12 @@
         $email = $_POST["email"];
         $senha = $_POST["senha"];
        
-        $comando = $pdo- > prepare("SELECT id_cliente,senha From cliente where email = :email");
+        $comando = $pdo -> prepare("SELECT id_cliente,senha From cliente where email = :email");
 
-        $comando- >bindValue(":email",$email);
+        $comando ->bindValue(":email",$email);
 
-        $comando- >execute();
+        $comando ->execute();
+        header("location:procedimento.html");
 
         if($comando->rowCount()== 1){
             $resultado = $comando->fetch();
