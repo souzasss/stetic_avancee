@@ -8,38 +8,31 @@
     <title>Cadastro</title>
 </head>
 <body>
-
-        
-    <div class="geral">
-
+<div class="geral" >
     <div class="marrom">
-
-            <h1 id="titulo">Bem-Vindo de volta!</h1>
-            <h1 id="subtitulo">Acesse sua conta agora novamente.</h1>
-            <button class="botao_entrar">Entrar</button>
-        </div>
+        <h1 id="titulo">Bem vindo de volta!</h1>
+        <h1 id="subtitulo">Acesse sua conta agora novamente.</h1>
+        <a href="login.html"><button class="botao_entrar">Entrar</button></a>
     </div>
 </div>
-
-
     <div class="conta">
-        
-            <h1 id="criar_conta">Crie sua conta:</h1>
-     
-        <div class="conta2"><input type="text"  placeholder="Nome">
-        <br><br></div>
-        <div class="conta2"> <input type="text"  placeholder="Email">
-        <br><br></div>
-        <div class="conta2"><input type="password"  placeholder="Senha">
-        <br><br></div>
+        <div class="block_top">
+        <img src="logo.png" alt="logo">
+        </div>
+        <h1 id="criar_conta">Crie sua conta:</h1>
+        <form action="cadastrar.php" method="post">
+        <div class="conta2"><input type="text" name="nome" placeholder="Nome">
+            <br><br></div>
+        <div class="conta2"> <input type="text" name="email" placeholder="Email">
+            <br><br></div>
+        <div class="conta2"><input type="password"  name="senha" placeholder="Senha">
+            <br><br>
+        </div>
 
-        <div class="button"> <button> Cadastrar </button>
+       <input type="submit" value="Cadastrar">  
 
-            
-    
-        </div>  
-     </div>
-   
+    </form>
+    </div>
        
 </body>
 </html>
