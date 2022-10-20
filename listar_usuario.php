@@ -18,24 +18,28 @@
                 <th>Data</th>
                 <th>Hora</th>
                 <th>Procedimento</th>
+                <th>Id id_agendamento</th>
                 <th>Id cliente</th>
             </tr>
         </thead>
         <tbody>
             <?php
-            include("listar.php");
+
+            //include("listar.php");
             //verifica se a variável tem os valores da tabela.
+            /*
             if (!empty($resultado)) {
                 //seleciona linha por linha.
                 foreach ($resultado as $linha) {?>
                     <tr>
-                    <td> <?php echo $linha['data_agend']; ?></td>
+                    <td> <?php echo $linha['data_data']; ?></td>
                     <td> <?php echo $linha['hora']; ?></td>
                     <td> <?php echo $linha['fk_procedimento']; ?></td>
+                    <td> <?php echo $linha['id_agendamento']; ?></td>
                     <td> <?php echo $linha['id_idcliente']; ?></td>
                     </tr>
                 <?php }
-            }
+            }*/
             ?>
         </tbody>
     </table>

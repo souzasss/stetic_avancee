@@ -2,9 +2,9 @@
     include("config.php");
 
     //comando sql.
-    $comando = $pdo->prepare("SELECT data_agend, hora, fk_procedimento, id_idcliente FROM agendamento;");
+    $comando = $pdo->prepare("SELECT data_data, hora, fk_procedimento, id_agendamento, id_idcliente FROM agendamento;");
     //executa a consulta no banco de dados.
-    $comando->execute();
+   $comando->execute();
 
     //Verifica se existe pelo menos um registro na tabela.
     if($comando->rowCount() >= 1)
