@@ -1,0 +1,56 @@
+.nome{
+  display: inline-block;
+  /* background-color: red;  font-size: 0.9rem; */
+  font-family: arial;
+  font-weight: 200;
+  color: orange;
+  display: flex;
+  justify-content: center;
+
+}
+.margem{
+  margin-top: 60px;
+}
+.bloco{
+  background-color: rgba(255, 228, 177, 0.562);
+}
+.nome hr{
+  width: 500px;
+  color: orange;
+  background-color: orange !important;
+  height: 4px;
+  border: none;
+}
+.container{
+position: relative;
+  justify-self: center;
+  /* background-color: red; */
+  width: 500px;
+}
+.nome img{
+  width: 40px;
+  height: auto;
+  display: inline;
+  padding-right: 30px;
+  
+}
+.icone{
+  vertical-align: middle;
+  display: inline-block;
+}
+.icone h1{
+  display: inline;
+}
+.nome a{
+  text-decoration: none;
+  color: rgb(255, 195, 83);
+  font-family: 'Courier New', Courier, monospace;
+}
+.nome a:hover{
+  color: rgb(253, 174, 70);
+
+}
+.alinhamento{
+  display: flex;
+  justify-content: center;
+}
