@@ -3,7 +3,7 @@ include ("config.php");
 $data_data = $_POST["data_data"];
 $hora = $_POST["hora"];
 $procedimento = $_POST["fk_procedimento"];
-$cliente = $_POST["id_idcliente"]; //verificar inputs, verificar seção
+$cliente = $_POST["id_idcliente"]; 
 
 $comando = $pdo->prepare("INSERT INTO agendamento   (data_data, hora, fk_procedimento, id_idcliente) VALUES(:data_data,:hora,:fk_procedimento, :id_idcliente) ");
 

@@ -28,7 +28,7 @@
 
         .block_bk{
             width: 1264px;
-            height: 542px;
+            height: 650px;
     
             background: #B87648;
             border-radius: 30px;
@@ -40,8 +40,7 @@
         }
 
         .text_align{
-            text-align:
-             center;
+            text-align: center;
             color: #FFFFFF;
         }
 
@@ -52,7 +51,7 @@
 
         .div_block input{
             width: 700px;
-            height: 70px;
+            height: 76px;
 
             border-radius: 20px;
             margin-left: auto;
@@ -77,7 +76,7 @@
 
         .conc{
             margin-top: 15px;
-            width: 80px;
+            width: 0px;
             height: 30px;
             border-radius: 10px;
             border-style: none;
@@ -86,7 +85,28 @@
             color:rgb(184, 118, 72);
             text-align: center;
             font-size: 23px;
+            margin-top:-69px;
         }
+        input[type="submit"]
+        {
+            margin-top:31px;
+            height:46px;
+            width: 189px;
+        }
+
+        #voltar{
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #B87648;
+    color: wheat;
+    margin-top: 100px;
+    background-color: #B87648;
+    margin-left: 650px;
+    
+
+}
     </style>
 </head>
 <body>
@@ -132,7 +152,7 @@
         
                 <input type="time" name="hora"></form>
 
-            <input type="submit" name="agendar" value="agendar" class="conc align">
+            <input type="submit" name="agendar" value="AGENDAR">
         
             
         </div>
@@ -140,7 +160,7 @@
                  
               
     </div>
-
+    <a href="procedimento.html">  <button id="voltar">Voltar</button> </a> 
     
 </body>
 </html>

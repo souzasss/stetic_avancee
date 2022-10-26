@@ -8,8 +8,24 @@
     <link rel="stylesheet" href="perfil.css">
     <title>Perfil</title>
     
+<style>
+
+.nome{
+  display: inline-block;
+  /* background-color: red;  font-size: 0.9rem; */
+  font-family: arial;
+  font-weight: 200;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+    
+</style>
+
 </head>
 <body>
+    <!-- rgba(255, 228, 177, 0.562)-->
     <div class="back coluna alinhamento">
         <DIV class="branco alinhamento">
             <span style="text-align:center;">
@@ -32,7 +48,8 @@
                 <a href=""><h3>Desmarcar procedimentos</h3></a>
                 <hr style="margin-bottom:60px">
                 <div class="icone">
-                    <img src="icone-perfil.jpg" alt="">
+                    <input type="file" id="meu_upload"><br>
+                    <img id="imagem" src="icone-perfil.jpg" width="100px">
                     <h1 class="margem">Funcionários</h1>
                 </div>
                 <a href=""><h3>Agendamentos</h3></a>
@@ -45,4 +62,25 @@
             
        
 </body>
+
+<script src="jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).on("change", "#meu_upload", function(e) {
+        showThumbnail(this.files);
+    });
+
+    function showThumbnail(files) {
+        if (files && files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+               imagem.src =  e.target.result;
+            }
+
+            reader.readAsDataURL(files[0]);
+        }
+    }
+</script>
+
 </html>
