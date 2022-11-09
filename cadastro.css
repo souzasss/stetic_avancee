@@ -9,11 +9,11 @@ body,html
     font-family: Arial;
     overflow:hidden;
     width: 100%;
-    height: 100vh;
-    
+    height: 100vh;  
  }
 
-.block_top{
+.block_top
+{
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -28,19 +28,20 @@ body,html
     height: 100%;
     font-family: 'Times New Roman';
     margin-left:90px; 
-    ;
  }
- .conta img{
+
+ .conta img
+ {
     height: 270px;
  }
 
  .marrom
  {
-     background-color: #B87648;
-     display: flex;
-     flex-direction: column;
-     height: 950px;
-     width: 500px;
+    background-color: #B87648;
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+    width: 500px;
  }
 
 input[type=submit]
@@ -54,23 +55,26 @@ input[type=submit]
     color: #EDEDED;
     background-color:#B87648;
 }
+
 input
 {
     border-radius: 15px;
-            padding: 15px;
-            border-style: none;
-            margin-top: auto;
-            margin-bottom: auto;
-            background-color: #E9E9E9;
+    padding: 15px;
+    border-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #E9E9E9;
 }
 
-#titulo{
+#titulo
+{
     color: white;
     text-align: center;
     margin-top: 50%;
 }
 
-#subtitulo{
+#subtitulo
+{
     color: white;
     text-align: center;
     font-family: Arial;
@@ -78,7 +82,8 @@ input
     font-size: 100%;
 }
 
-.botao_entrar{
+.botao_entrar
+{
     width: 240px;
     height: 90px;
     border-radius: 15px;
@@ -89,7 +94,8 @@ input
     margin-left: 23%;
 }
 
-#criar_conta{
+#criar_conta
+{
     color: #B87648;;
     text-align: center;
     font-family: Arial;

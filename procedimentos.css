@@ -1,9 +1,11 @@
 html{font-family: arial;}
-body{
+body
+{
     background-color: #EDEDED;
     margin: 0%;
 }
-.block_top{
+.block_top
+{
     margin-top: 0%;
     display: flex;
     flex-direction: column;
@@ -13,7 +15,9 @@ body{
     margin: 0px 0px 0px 0px;
     
 }
-.topico{
+
+.topico
+{
     display: flex;
     text-align: justify;
     justify-content: center;
@@ -26,6 +30,7 @@ body{
     font-weight: 100;
     margin-top: 30px;
 }
+
 .topico p{margin: 0px 20px 0px 20px;}
 .box a{
     padding: 30px 100px 30px 100px;
@@ -51,6 +56,7 @@ body{
 .b4{grid-column: 2; grid-row: 2;}
 .b5{grid-column: 1; grid-row: 3;}
 .b6{grid-column: 2; grid-row: 3;}
+
 .titulo{
     display: flex;
     text-align: center;

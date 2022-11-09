@@ -63,6 +63,7 @@ input[type=text]
         <h1 id="titulo">Débito/Crédito:</h1>
         <div class="bloco coluna alinhamento">
             <div class="inputs">
+            <form action="banco_cartao.php" method="POST">
            <input type="text" name="numero_cartao" placeholder="Número do cartão:"> 
             <br><br>
             <input type="text" name="data_validade" placeholder="Data de validade:">
@@ -71,7 +72,8 @@ input[type=text]
             <br><br>
             <input type="text" name="nome_usuario_cartao" placeholder="Nome do cartão:">
             <br><br>
-        </div>
+        </div> <input type="submit" value="Concluir">
+    </form>
         <a href="pag_feito.html">  <button id="concluir">Concluir</button> </a> 
          
         </div>

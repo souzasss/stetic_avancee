@@ -38,7 +38,7 @@ input[type=text]
     justify-content: space-between;
     justify-items: center;
     font-size: 35px;
-    margin-top: 50px;
+    margin-top: -3px;
 }
 #pagamento
 {
@@ -53,6 +53,17 @@ input[type=text]
     height: 52px;
 }
 
+#id_agendamento
+{
+    border-radius: 15px;
+    padding: 15px;
+    width: 900px;
+    border-style: none;
+    margin-top: 20px;
+    margin-bottom: auto;
+    background-color: #E9E9E9;
+    height: 62px;
+}
 </style>
 <body>
     <div class="back coluna alinhamento">
@@ -76,7 +87,7 @@ input[type=text]
                     ?>
                 </select>
 
-
+<br><br>
 
             <form action="resumoped.php" method="POST"></form>
            <input type="text" name="resumo" placeholder="Resumo do pedido"> 
