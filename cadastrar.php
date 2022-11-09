@@ -11,5 +11,5 @@ $comando = $pdo->prepare("INSERT INTO cliente   (nome, email, senha) VALUES(:nom
     $comando->bindValue(":senha",$senha);
    
     $comando->execute();
-    header("location:procedimento.html");
+    header("location:login.html");
 ?>

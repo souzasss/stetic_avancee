@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .alinhamento{
+            margin-left: auto;
+            margin-right: auto;
+            align-content: space-around; 
+           
+
+        }
+        .coluna{
+            display: flex;
+            flex-direction: column;
+        }
+        .linha{
+            display: flex;
+            flex-direction: row;
+
+        }
+        #titulo{
+            color: #B87648;
+            text-align: center;
+        }
+        .bloco{
+            background-color: #B87648;
+            width: 1050px;
+            height: 430px;
+            border-radius: 20px;
+            padding: 50px;
+        }
+        .entrada{
+            width: 630px;
+            height: 100px;
+            border-radius: 15px;
+            padding: 20px;
+            border-style: none;
+            margin-top: 30px;
+            margin-bottom: auto;
+            align-items: center;
+            display: flex;
+        }
+        .botao_entrar{
+            width: 240px;
+            height: 90px;
+            margin-top: 50px;
+            border-radius: 15px;
+            border-style: solid;
+            border-color:#B87648;
+            color: #B87648;
+            background-color:#EDEDED;
+        }
+        .branco{
+            width: 100%;
+            height: 100%;
+            background-color: white; 
+        }
+        .back{
+            width: 100%;
+            background-color: #EDEDED;
+            height: 100%;
+        }
+        .logo{
+            margin-left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="back coluna alinhamento">
+        <DIV class="branco alinhamento">
+            <img src="logo.png" class="logo">
+        </DIV>
+        <br><br>
+        <h1 id="titulo">Cadastro de procedimentos:</h1>
+        <div class="bloco coluna alinhamento">
+            <form action="cadastrar_proced.php" method="POST">
+            <input type="text" class= "nome_usuario entrada alinhamento" name="nome_procedimento" placeholder="Nome do procedimento:">
+            <input type="text" class= "senha entrada alinhamento" name="preco" placeholder="Preço do procedimento:">
+        
+        </div>
+        <input class="botao_entrar alinhamento" type="submit" value="Cadastrar">
+    </form>
+    </div>
+</body>
+</html>

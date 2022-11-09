@@ -9,7 +9,7 @@
 
 }
 .margem{
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .bloco{
   background-color: #B87648;
@@ -53,4 +53,20 @@ position: relative;
 .alinhamento{
   display: flex;
   justify-content: center;
+}
+
+.text-center
+{
+    margin-right:"3000px";
+    background-color: #CDCDCD;
+    height: 55px;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 74px;
 }

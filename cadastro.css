@@ -7,6 +7,9 @@ body,html
     margin: 0%;
     background-color: white;
     font-family: Arial;
+    overflow:hidden;
+    width: 100%;
+    height: 100vh;
     
  }
 
@@ -20,11 +23,12 @@ body,html
  {
     text-align: center;
     display: flex;
-    width: 300px;
+    width: 50%;
     flex-direction:column;
     height: 100%;
     font-family: 'Times New Roman';
-    margin-left:50%; 
+    margin-left:90px; 
+    ;
  }
  .conta img{
     height: 270px;

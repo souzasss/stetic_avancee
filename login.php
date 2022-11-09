@@ -4,21 +4,25 @@
         $email = $_POST["email"];
         $senha = $_POST["senha"];
        
-        $comando = $pdo -> prepare("SELECT id_cliente,senha From cliente where email = :email");
+        $comando = $pdo -> prepare("SELECT * FROM cliente WHERE email = :email");
 
         $comando ->bindValue(":email",$email);
 
         $comando ->execute();
-        header("location:procedimento.html");
 
         if($comando->rowCount()== 1){
             $resultado = $comando->fetch();
-            if ($resultado['senha']== MD5($senha)){
+  
+            if ($resultado['senha']== $senha){
+                    session_start();
+                    $_SESSION['id_cliente'] = $resultado['id_cliente'];
+                    $_SESSION['nivel_adm'] = $resultado['nivel_adm'];
+                    $_SESSION['loggedin'] = true;
                     header("location:procedimento.html");
             }else{
-                echo("Email ou senha inválidos");
+                echo("Senha inválida");
             }
         }else{
-            echo("Email ou senha Inválido");
+            echo("Email Inválido");
         }
 ?>

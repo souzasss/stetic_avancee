@@ -95,18 +95,16 @@
         }
 
         #voltar{
-    width: 300px;
-    height: 100px;
-    border-radius: 15px;
-    border-style: solid;
-    border-color: #B87648;
-    color: wheat;
-    margin-top: 100px;
-    background-color: #B87648;
-    margin-left: 650px;
-    
-
-}
+            width: 300px;
+            height: 100px;
+            border-radius: 15px;
+            border-style: solid;
+            border-color: #B87648;
+            color: wheat;
+            margin-top: 100px;
+            background-color: #B87648;
+            margin-left: 650px;
+        }
     </style>
 </head>
 <body>
@@ -126,9 +124,21 @@
                 Código do cliente: 
             </h3>
             <select id="id_idcliente" name="id_idcliente">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
+                <?php
+            session_start();
+                    include ("listar_codigo_cliente.php");
+                    if( $_SESSION['nivel_adm']==1)
+                    {
+                        foreach ($lista_clientes as $linha) {
+                            $id_cliente=$linha["id_cliente"];
+                            echo("<option>$id_cliente</option>");
+                        }
+                    }else{
+                        $id = $_SESSION['id_cliente'];
+                        echo("<option>$id</option>"); 
+                    }
+                    
+                ?>
             </select>
              
             <label for="select"><h3>Escolha o procedimento:</h3></label>
@@ -152,7 +162,7 @@
         
                 <input type="time" name="hora"></form>
 
-            <input type="submit" name="agendar" value="AGENDAR">
+             <input type="submit" name="agendar" value="AGENDAR">
         
             
         </div>
@@ -160,6 +170,7 @@
                  
               
     </div>
+                </form>
     <a href="procedimento.html">  <button id="voltar">Voltar</button> </a> 
     
 </body>
