@@ -15,7 +15,6 @@ $comando = $pdo->prepare("INSERT INTO pagamento   (numero_cartao, data_validade,
     $comando->bindValue(":cvv",$cvv);
     $comando->bindValue(":nome_usuario_cartao",$nome_usuario_cartao);
     $comando->bindValue(":id_cliente",$id_cliente);
-
     $comando->execute();
     header("location:pag_feito.html");
 ?>
