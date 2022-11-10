@@ -18,7 +18,7 @@ input[type=text]
     margin-top: auto;
     margin-bottom: auto;
     background-color: #E9E9E9;
-    height: 40px;
+    height: 60px;
 }
 .inputs
 {
@@ -45,7 +45,7 @@ input[type=text]
     border-style: none;
     width: 300px;
     font-size: 20px;
-    margin-left: 369px;
+    margin-left: 640px;
     margin-top: 74px;
     background-color: #B87648;
     color: #E9E9E9;
@@ -63,7 +63,7 @@ input[type=text]
         <h1 id="titulo">Débito/Crédito:</h1>
         <div class="bloco coluna alinhamento">
             <div class="inputs">
-            <form action="banco_cartao.php" method="POST">
+           <form action="banco_cartao.php" method="POST">
            <input type="text" name="numero_cartao" placeholder="Número do cartão:"> 
             <br><br>
             <input type="text" name="data_validade" placeholder="Data de validade:">
@@ -72,11 +72,10 @@ input[type=text]
             <br><br>
             <input type="text" name="nome_usuario_cartao" placeholder="Nome do cartão:">
             <br><br>
-        </div> <input type="submit" value="Concluir">
-    </form>
-        <a href="pag_feito.html">  <button id="concluir">Concluir</button> </a> 
-         
         </div>
+        </div>
+        <input type="submit" id="concluir" value="Concluir">
+    </form>
             
        
 </body>

@@ -67,9 +67,9 @@ input[type=text]
 </style>
 <body>
     <div class="back coluna alinhamento">
-        <DIV class="branco alinhamento">
+        <div class="branco alinhamento">
             <img src="logo.png" class="logo">
-        </DIV>
+        </div>
         <br><br>
         <h1 id="titulo">Pagamento:</h1>
         <div class="bloco coluna alinhamento">
@@ -104,9 +104,8 @@ input[type=text]
   <script>
     function Recarregar()
     {
-        window.open("pagamento.php?id_agendamento="+id_agendamento)
+        window.open("listar_agendamento_procedimento.php?id_agendamento="+ $id_agendamento,"_self");
     }
-
 
   </script>     
 </body>

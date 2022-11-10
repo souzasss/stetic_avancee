@@ -115,62 +115,58 @@
                 Agende seu horário:
             </h3>
     <form action="agend.php" method="POST">
-    <div class="block_bk align">
-        
-    
-        <div class="text_align div_block column">
-            <br>
-            <h3>
-                Código do cliente: 
-            </h3>
-            <select id="id_idcliente" name="id_idcliente">
-                <?php
-            session_start();
-                    include ("listar_codigo_cliente.php");
-                    if( $_SESSION['nivel_adm']==1)
-                    {
-                        foreach ($lista_clientes as $linha) {
-                            $id_cliente=$linha["id_cliente"];
-                            echo("<option>$id_cliente</option>");
-                        }
-                    }else{
-                        $id = $_SESSION['id_cliente'];
-                        echo("<option>$id</option>"); 
-                    }
-                    
-                ?>
-            </select>
-             
-            <label for="select"><h3>Escolha o procedimento:</h3></label>
-            <select id="select" name="fk_procedimento">
-                    <option value="null">Escolha a sua opção:</option>
-                    <option value="1">Preenchimento Labial</option>
-                    <option value="2" >Intradermoterapia</option>
-                    <option value="3">Botox </option>
-                    <option value="4">Rinomodelação </option>
-                    <option value="5">Microagulhamento </option>
-                    <option value="proced6">Criolipólise</option>
-                  </select>
-        
-            <h3>
-                Selecione a data:
-            </h3>
-                  <input type="date" name="data_data">
-            <h3>
-                Define a hora:
-            </h3>
-        
-                <input type="time" name="hora"></form>
-
-             <input type="submit" name="agendar" value="AGENDAR">
-        
+        <div class="block_bk align">
             
-        </div>
+        
+            <div class="text_align div_block column">
+                <br>
+                <h3>
+                    Código do cliente: 
+                </h3>
+                <select id="id_idcliente" name="id_idcliente">
+                    <?php
+                session_start();
+                        include ("listar_codigo_cliente.php");
+                        if( $_SESSION['nivel_adm']==1)
+                        {
+                            foreach ($lista_clientes as $linha) {
+                                $id_cliente=$linha["id_cliente"];
+                                echo("<option>$id_cliente</option>");
+                            }
+                        }else{
+                            $id = $_SESSION['id_cliente'];
+                            echo("<option>$id</option>"); 
+                        }
+                        
+                    ?>
+                </select>
+                
+                <label for="select"><h3>Escolha o procedimento:</h3></label>
+                <select id="select" name="fk_procedimento">
+                        <option value="null">Escolha a sua opção:</option>
+                        <option value="1">Preenchimento Labial</option>
+                        <option value="2" >Intradermoterapia</option>
+                        <option value="3">Botox </option>
+                        <option value="4">Rinomodelação </option>
+                        <option value="5">Microagulhamento </option>
+                        <option value="proced6">Criolipólise</option>
+                    </select>
+            
+                <h3>
+                    Selecione a data:
+                </h3>
+                    <input type="date" name="data_data">
+                <h3>
+                    Define a hora:
+                </h3>
+            
+                    <input type="time" name="hora"></form>
 
-                 
-              
-    </div>
-                </form>
+                <input type="submit" name="agendar" value="AGENDAR">
+            
+            </div>    
+            </div>
+    </form>
     <a href="procedimento.html">  <button id="voltar">Voltar</button> </a> 
     
 </body>
