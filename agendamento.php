@@ -144,11 +144,11 @@
                 <label for="select"><h3>Escolha o procedimento:</h3></label>
                 <select id="select" name="fk_procedimento">
                         <option value="null">Escolha a sua opção:</option>
-                        <option value="1">Preenchimento Labial</option>
-                        <option value="2" >Intradermoterapia</option>
-                        <option value="3">Botox </option>
-                        <option value="4">Rinomodelação </option>
-                        <option value="5">Microagulhamento </option>
+                        <option value="11">Preenchimento Labial</option>
+                        <option value="12" >Intradermoterapia</option>
+                        <option value="13">Botox </option>
+                        <option value="14">Rinomodelação </option>
+                        <option value="15">Microagulhamento </option>
                         <option value="proced6">Criolipólise</option>
                     </select>
             

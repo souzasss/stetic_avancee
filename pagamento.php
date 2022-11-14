@@ -78,7 +78,7 @@ input[type=text]
                 <select id="id_agendamento" name="id_agendamento" onchange="Recarregar();">
                     <?php
     
-                        include("listar_agendamento.php");
+                        include("listar_agendamento_procedimento.php");
                         foreach ($lista_agendamento as $linha) {
                             $id_agendamento=$linha["id_agendamento"];
                             echo("<option>$id_agendamento</option>");
@@ -90,7 +90,24 @@ input[type=text]
 <br><br>
 
             <form action="resumoped.php" method="POST"></form>
-           <input type="text" name="resumo" placeholder="Resumo do pedido"> 
+            <table class="table">
+        <tbody>
+        <?php
+            include("listar_agendamento_procedimento.php");
+            
+            if (!empty($lista_procedimento_agendamento)) {
+              
+                foreach ($lista_procedimento_agendamento as $linha) {?>
+                    <tr class="tr">
+                    <td class="td"> <?php if($linha['fk_procedimento'] = 15 ){  echo "Microagulhamento";} if($linha['fk_procedimento'] = 14 ){  echo "Rinomodelação";}?>  </td>
+                    <td class="td"> <?php echo $linha['data_data']; ?> </td>
+                    <td class="td"> <?php echo $linha['hora']; ?> </td>
+                    </tr>
+                <?php }
+            }
+            ?>
+        </tbody>
+    </table> 
         </form>
             <br><br>
             <input type="text" name="total" placeholder="Total">
